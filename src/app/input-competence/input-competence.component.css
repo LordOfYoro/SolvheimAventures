@@ -1,0 +1,45 @@
+#btnAjout{
+  padding: 12px 10px;
+  font-size: 80%;
+  top: 0;
+  left: 0;
+}
+#imgAjout{
+  position: absolute;
+  left: 6px;
+  top: 6px;
+
+}
+#inputAdd{
+  display:table-cell;
+  vertical-align: bottom;
+  top:-1px;
+
+}
+#imgInputAdd{
+    height:36px;
+}
+.imgInputSuppr{
+  height:34px;
+  border-right: 1px solid #ccc;
+  width: 100%;
+}
+
+div{
+  position:relative;
+}
+button, button img{
+  width: 15px;
+  height: 15px;
+  padding: 0;
+}
+button{
+  position: absolute;
+  font-size: 60%;
+  top:-10px;
+  left: 115px;
+  margin-left:6px
+}
+label{
+  padding: 0 5px;
+}

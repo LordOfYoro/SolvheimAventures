@@ -1,0 +1,28 @@
+<div class="form-group">
+      <label>{{label}}
+        <button type="submit" (click)="changeMode()" >
+          <span [class]="classBtnModifier"></span>
+        </button>
+      </label>
+      <span [class]="labelClass">{{valueComp}}</span>
+
+      <input [name]="nameInput" [id]="nameInput" [type]="typeInput" [class]="inputClass" [placeholder]="valueComp" [(ngModel)]="valueComp" required/> <span *ngIf="typeComponent == 'pourcentage' ">%</span>
+      <span *ngIf="typeComponent == 'de'">
+        dé <span [class]="labelClass">{{degDe}}</span>
+          <select [(ngModel)]="degDe" *ngIf="mode == 'Edit'">
+            <option *ngFor="let option of listDe" [ngValue]="option.value">{{option.value}}</option>
+          </select>
+      </span>
+
+
+
+      <div [class]="errorTextHidden">
+        <p>Le champs doit être remplis et faire minimum 3 caractères </p>
+      </div>
+      <div [class]="errorNumHidden">
+        <p>La valeur ne peut pas être inférieur à 0 </p>
+      </div>
+      <div [class]="errorPourcentageHidden">
+        <p>La valeur doit être entre 0 et 100 </p>
+      </div>
+</div>

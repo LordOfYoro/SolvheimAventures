@@ -1,0 +1,31 @@
+<div class="form-group">
+
+      <label class="col-xs-3">{{label}}</label>
+
+<!----------------notEdit------------------------->
+
+<ul class="col-xs-9" *ngIf="mode == 'notEdit'">
+  <li *ngFor="let list of listCompetence"><span class="col-xs-5">{{list.titre}} :</span><span class="col-xs-3">   {{list.pourcentage}}%</span></li>
+</ul>
+<!--------------------Edit------------------------->
+      <div class="col-xs-5" *ngIf="mode == 'Edit'">
+<!---------------------Input nom de la compétence----------------------------->
+        <input class="form-control" type ="text" *ngFor="let list of listCompetence" [(ngModel)]="list.titre"/>
+      </div>
+
+      <div class="input-group col-xs-3" *ngIf="mode == 'Edit'">
+<!-----------------------------Pourcentage de la capacité--------------------->
+        <input class="form-control" type ="text" *ngFor="let list of listCompetence" [(ngModel)]="list.pourcentage"/>
+<!------------------Input pour ajouter une nouvelle compétence----------------->
+        <div id="inputAdd">
+          <span *ngFor="let list of listCompetence;let i = index" class="imgInputSuppr col-xs-12 input-group-addon glyphicon glyphicon-minus" (click)="supprComp(i)"></span>
+          <span id="imgInputAdd" class="input-group-addon glyphicon glyphicon-plus" (click)="addNexComp()"></span>
+        </div>
+      </div>
+
+
+  <!-------------------Bouton change mode------------------->
+      <button type="submit" (click)="changeMode()">
+        <span [class]="classBtnModifier"></span>
+      </button>
+</div>

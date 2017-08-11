@@ -1,0 +1,118 @@
+/*
+    Created on : 3 mai 2017
+    Author     : Dylan Bogaert
+*/
+/*Mon css*/
+
+ul{margin-bottom: 0;}
+p {
+  margin-bottom: 20px;
+}
+h1 {
+  color: #6aaadf;
+}
+header {
+  margin: 0 15px;
+}
+header img {
+  padding-right: 0px !important;
+  padding-left: 0px!important;
+}
+header #connexion_bar {
+  height: 50px;
+  background-color: #373736;
+  border: 0px;
+  min-width: 375px;
+}
+header #connexion_bar #logo,
+header #connexion_bar #btn-login,
+header #connexion_bar #btn-logout {
+  height: 100%;
+}
+header #connexion_bar #btn-login {
+  border-right: 1px solid white ;
+}
+header #connexion_bar #btn-login,
+header #connexion_bar #btn-logout {
+  padding: 1em 0em ;
+  color: white;
+  background-color: #6aaadf;
+  text-align: center;
+}
+header #connexion_bar #btn-login:hover,
+header #connexion_bar #btn-logout:hover {
+  background-color: white;
+  color: #6aaadf;
+}
+#home-view{
+    color: red;
+
+}
+
+header nav {
+  background: linear-gradient(to bottom, #ffffff 0%, #dee1e2 100%);
+}
+header nav ul li {
+  padding: 1em 0;
+  border-right: 2px solid white ;
+  text-align: center;
+}
+header nav ul li:hover {
+  background-color: #6aaadf;
+  color: white;
+}
+header nav ul li#lastchild {
+  border-right: none;
+}
+header #banniere{
+    margin-top: 50px;
+}
+#background_contenu {
+  background-image: url(../assets/images/fond_body.jpg);
+  background-size: cover;
+  margin: 0;
+  min-height: 800px ;
+}
+#background_contenu #contenu {
+  background-image: url(../assets/images/fond_page_transparence.png) ;
+  background-color: rgba(255, 255, 255, 0.75);
+  min-height: 800px ;
+}
+#background_contenu #contenu h1 {
+  border-bottom: 1px solid #6aaadf;
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #373736;
+  text-align: center;
+  color: #6aaadf;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header nav{
+        margin-top:50px;
+    }
+  header nav ul .dernierElementT {
+    border-left: 2px solid white;
+  }
+  header nav ul .elementBasT {
+    border-top: 2px solid white;
+  }
+  header nav ul li {
+    border-right: none !important ;
+  }
+}
+@media screen and (max-width: 768px) {
+    header nav{
+        margin-top:50px;
+    }
+  header nav ul li {
+    border-right: none !important ;
+    border-bottom: 2px solid white;
+  }
+  header nav ul li#lastchild {
+    border-bottom: none;
+  }
+
+}

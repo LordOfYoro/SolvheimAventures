@@ -1,0 +1,20 @@
+/* 
+    Created on : 3 mai 2017
+    Author     : Dylan Bogaert
+*/
+/*Mon css*/
+
+#background_contenu {
+  background-image: url(../../assets/images/fond_body.jpg);
+  background-size: cover;
+  margin: 0;
+  min-height: 800px ;
+}
+#background_contenu #contenu {
+  background-image: url(../../assets/images/fond_page_transparence.png) ;
+  background-color: rgba(255, 255, 255, 0.75);
+  min-height: 800px ;
+}
+#background_contenu #contenu h1 {
+  border-bottom: 1px solid #6aaadf;
+}

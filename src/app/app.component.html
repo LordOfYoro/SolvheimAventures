@@ -1,20 +1,60 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.com/">Angular blog</a></h2>
-  </li>
-</ul>
+   <!--==============================header==================================-->
 
+   <header>
+     <!--------------------Barre de connexion Site web-------------------------->
+
+       <div id="connexion_bar" class="row navbar navbar-default navbar-fixed-top">   
+            <div id="loading">
+                 <img src="../../assets/loading.svg" alt="Loading spinner">
+            </div>
+           
+
+           
+           <a id="btn-home-view" routerLink="/" routerLinkActive="active"><img id="logo" class="col-xs-4 col-sm-3 col-md-2 col-lg-2" [src]="logo" /></a>
+            
+           
+           <main class="container col-xs-4 col-sm-3 col-sm-offset-3 col-md-offset-6 col-md-2 col-lg-2 col-lg-offset-6">
+                    <!-- home view -->
+                    <div id="home-view">
+                      <a routerLink="/ficheperso"><h4></h4></a>
+                    </div>
+
+            </main>
+           
+           
+           <button id="btn-login" class="col-xs-4 col-sm-3 col-md-2 col-lg-2 btn btn-primary btn-margin">
+                            Connexion </button>
+            <button id="btn-logout" class="col-xs-4 col-sm-3  col-md-2  col-lg-2 btn btn-primary btn-margin">
+                            Déconnexion
+            </button>
+       
+            <div class="content">
+            </div>
+
+       </div>
+
+       <div class="hidden-xs hidden-sm row" id="banniere">
+           <a routerLink="/index" routerLinkActive="active"><img class="hidden-xs hidden-sm col-md-12 col-lg-12" [src]="banniere" alt="banniere" /></a>
+       </div> 
+
+       <nav class="row">  
+           <ul class="menu col-md-12 col-lg-12">
+               <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><li class="col-sm-6 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 active">Accueil</li></a>
+               <a routerLink="/jdr" routerLinkActive="active"><li class="dernierElementT col-sm-6 col-md-2 col-lg-2">JDR ?</li></a>
+               <a routerLink="/notreAventure" routerLinkActive="active"><li class="elementBasT col-sm-6 col-md-2 col-lg-2">Notre Aventure</li></a>
+               <a routerLink="/contact" routerLinkActive="active"><li id="lastchild" class="elementBasT dernierElementT col-sm-6 col-md-2 col-lg-2">Contact</li></a>
+           </ul>
+        </nav>
+   </header> 
+
+   <!--==============================corps===================================-->
+
+   <router-outlet></router-outlet>
+
+   <!--==============================footer==================================-->
+
+   <footer>
+         <p><strong>©2017 Dylan Bogaert</strong><br>
+    </footer>	    
+   <script src="scripts/jquery-3.2.1.min.js"></script>

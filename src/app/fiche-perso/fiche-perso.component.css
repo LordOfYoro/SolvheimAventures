@@ -1,0 +1,39 @@
+#background_transparent {
+    margin-top: 50px;
+    background-color: rgba(234, 240, 244, 0.79);
+    height: 885px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 15px;
+    min-height: 850px;
+    height: 100%;
+}
+#background_contenu {
+  background-image: url(../../assets/images/fond_body.jpg);
+  background-size: cover;
+  margin: 0;
+  min-height: 519px;
+  height:100% ;
+  
+}
+#background_blanc{
+    background-color: white;
+    min-height: 800px;
+}
+#fiche_perso{
+    background-color:  rgba(255, 201, 87, 0.70);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#avatar_perso img{
+  width : 200px;
+}
+#caract_principal app-input-text-fiche{
+
+
+}

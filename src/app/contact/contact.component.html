@@ -1,0 +1,49 @@
+<div id="background_contenu" class="row">
+    <div id="contenu" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <h1 class="col-xs-8 col-lg-8">{{title}}</h1>
+
+        <form class="well col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="form-group">
+                <legend><label>Contactez-nous</label></legend>
+            </div>
+            <div id="formNom" class="form-group">
+                <label for="nom">  Nom : </label>
+                <input id="contactNom" type="text" class="form-control" placeholder="Nom.." required>
+            </div>
+            <div id="contactErrNom" class="alert alert-block alert-danger" style="display:none">
+                <h4>Erreur !</h4>
+                Vous devez entrer au moins 4 caractères !
+            </div>
+            <div id="formMail" class="form-group">
+                <label for="mail">  Mail:</label>
+                <input id="contactMail" type="text" class="form-control" placeholder="Mail..">
+            </div>
+            <div id="contactErrMail" class="alert alert-block alert-danger" style="display:none">
+                <h4>Erreur !</h4>
+                Vous devez entrer une adresse mail valide !
+            </div>
+            <div id="formSujet" class="form-group">
+                <label for="sujet">  Sujet : </label>
+                <input id="contactSujet" type="text" class="form-control" placeholder="Sujet..">
+            </div>
+            <div id="contactErrSujet" class="alert alert-block alert-danger" style="display:none">
+                <h4>Erreur !</h4>
+                Vous devez entrer au moins 6 caractères !
+            </div>
+
+
+
+            <div id="formMessage" class="form-group">
+                <label for="message">  Message : </label>
+                <textarea id="contactMessage" class="form-control" rows="10"></textarea>
+                <p class="help-block">Vous pouvez agrandir la fenêtre</p>
+            </div>
+            <div id="contactErrMessage" class="alert alert-block alert-danger" style="display:none">
+                <h4>Erreur !</h4>
+                Il faut rentrer un message !
+            </div>
+
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+          </form>
+    </div>
+</div>

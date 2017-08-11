@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'app';
+  //Properties
+  title = 'Solvheim Aventures';
+  logo = "../assets/images/logo.png";
+  banniere = "../assets/images/banniere_header.jpg"
+  
 }

@@ -1,0 +1,44 @@
+<div id="background_contenu" class="row">
+    <div id="contenu" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+    </div>
+</div>
+
+
+<div id="background_transparent" class="row">
+    <div id="background_blanc" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 row">
+        <div id="fiche_perso" *ngIf="fichePerso" class="col-xs-8 col-xs-offset-2">
+            <div class="row">
+                <div id="avatar_perso" class="col-xs-6"><img [src]="srcAvatar" ></div>
+                <div id="info_principal" class="col-xs-6">
+                  <app-input-text-fiche  [label]="'Name :'" [valueComp]="namePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'name'"></app-input-text-fiche>
+                  <app-input-text-fiche  [label]="'Race :'" [valueComp]="racePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'race'"></app-input-text-fiche>
+                  <app-input-text-fiche  [label]="'Classe :'" [valueComp]="classePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'classe'"></app-input-text-fiche>
+                </div>
+            </div>
+            <div id="caract_principal" class="row">
+                <app-input-text-fiche class="col-xs-4" [label]="'Vie :'" [valueComp]="viePerso" [typeInput]="'number'" [typeComponent]="'number'" [nameInput]="'vie'"></app-input-text-fiche>
+                <app-input-text-fiche class="col-xs-4" [label]="'Magie :'" [valueComp]="magiePerso" [typeInput]="'number'" [typeComponent]="'number'" [nameInput]="'magie'"></app-input-text-fiche>
+                <app-input-text-fiche class="col-xs-4" [label]="'Poture de base :'" [valueComp]="posturePerso" [typeInput]="'text'" [typeComponent]="'number'" [nameInput]="'posture'"></app-input-text-fiche>
+            </div>
+            <div id="caract_pourcentage" class="row">
+                <app-input-text-fiche class="col-xs-4" [label]="'Physique :'" [valueComp]="testPhysiquePerso" [typeInput]="'number'" [typeComponent]="'pourcentage'" [nameInput]="'testPhysique'" ></app-input-text-fiche>
+                <app-input-text-fiche class="col-xs-4" [label]="'Spirituelle :'" [valueComp]="testSpirituellePerso" [typeInput]="'number'" [typeComponent]="'pourcentage'" [nameInput]="'testSpirituelle'" ></app-input-text-fiche>
+                <app-input-text-fiche class="col-xs-4" [label]="'Social :'" [valueComp]="testSocialPerso" [typeInput]="'number'" [typeComponent]="'pourcentage'" [nameInput]="'testSocial'" ></app-input-text-fiche>
+            </div>
+
+            <div id="degat" class="row">
+                <app-input-text-fiche class="col-xs-4" [label]="'Dégâts Physique: '" [valueComp]="nbDePhysiquePerso" [degDe]="degDePhysiquePerso" [typeInput]="'number'" [typeComponent]="'de'" [nameInput]="'degatPhysique'" [nbDeType]="'nbDePhysique'" [degDeType]="'degDePhysique'" ></app-input-text-fiche>
+                <app-input-text-fiche class="col-xs-4" [label]="'Dégâts Magique: '" [valueComp]="nbDeMagiquePerso" [degDe]="degDeMagiquePerso" [typeInput]="'number'" [typeComponent]="'de'" [nameInput]="'degatMagique'" [nbDeType]="'nbDeMagique'" [degDeType]="'degDeMagique'"></app-input-text-fiche>
+            </div>
+            <div class="row">
+              <app-text-area-fiche class="col-xs-6" [label]="'Equipé :'" [valTextArea]="equipementPerso" [nameTextArea]="'equipement'"></app-text-area-fiche>
+                <app-text-area-fiche class="col-xs-6" [label]="'Inventaire :'" [valTextArea]="inventairePerso" [nameTextArea]="'inventaire'"></app-text-area-fiche>
+            </div>
+            <div class="row">
+                <app-input-competence class="col-xs-12" [label]="'Compétences :'" ></app-input-competence>
+                <app-text-area-fiche class="col-xs-12" [label]="'Sorts :'" [valTextArea]="sortsPerso" [nameTextArea]="'sorts'"></app-text-area-fiche>
+                <app-text-area-fiche class="col-xs-12" [label]="'Biographie :'" [valTextArea]="bioPerso" [nameTextArea]="'biography'"></app-text-area-fiche>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+div{
+  position:relative;
+  padding: 5px;
+  margin-top:20px;
+}
+
+button, button img{
+  width: 15px;
+  height: 15px;
+  padding: 0;
+}
+button{
+  position: absolute;
+  font-size: 60%;
+  top:-12px;
+  right:-15px;
+}
+label{
+  position:relative;
+}

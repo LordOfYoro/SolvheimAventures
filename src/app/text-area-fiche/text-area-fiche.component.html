@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label >{{label}}
+    <button type="submit" (click)="changeMode()" >
+      <span [class]="classBtnModifier"></span>
+    </button>
+  </label>
+
+  <p *ngIf="mode == 'notEdit'">{{valTextArea}}</p>
+  <textarea class="form-control" [(ngModel)]="valTextArea" rows="4" cols="50" *ngIf="mode == 'Edit'">
+
+  </textarea>
+
+</div>

@@ -1,0 +1,41 @@
+<div id="background_contenu_inscription" class="row">   
+    <div id="contenuConnexion" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+        <form class="well col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" name="inscription" method="post" action="inscription_valide.php" onsubmit="return VerifForm(this)">
+            <div class="form-group">
+                <legend><label>{{title}}</label></legend>
+            </div>
+
+            <div id="formInscriptionPseudo" class="form-group">
+                <label for="Pseudo">  Nom d'utilisateur: </label>
+                <input id="inscriptionPseudo" name="inscriptionPseudo" type="text" class="form-control" placeholder="Pseudo.." ng-model="Pseudo"
+                       minlength="5" required />
+            </div>
+             <div id="inscriptionErrPseudo" class="alert alert-block alert-danger" style="display:none">
+                <h4>Erreur !</h4>
+                Vous devez entrer au moins 5 caractères ! 
+            </div>
+
+            <div id="formInscriptionPassword" class="form-group">
+                <label for="Password">  Mot de passe:</label> <img title="Le password doit contenir au moins 6 caractères" alt="aide mot de passe" [src]='imgInformation' />
+                <input id="inscriptionPassword" name="inscriptionPassword" type="password" class="form-control" placeholder="Password.." minlength="6" required />
+            </div>
+
+            <div id="formInscriptionMail" class="form-group">
+                <label for="mail">  Mail:</label> 
+                <input id="inscriptionMail" name="inscriptionMail" type="email" class="form-control " placeholder="Mail.." required />
+            </div>
+
+
+            <button class="col-lg-6 col-lg-offset-3 btn btn-primary" type="submit">S'inscrire</button>
+
+            <br/><br/>
+            <div id="" class="form-group">
+                <a routerLink="/index" routerLinkActive="active" class="xol-xs-12 col-lg-12 ">← Retour vers Solvheim Aventures ?</a>
+            </div>
+          </form>
+
+    </div>
+</div>
+
+

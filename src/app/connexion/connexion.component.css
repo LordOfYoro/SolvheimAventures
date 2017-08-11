@@ -1,0 +1,14 @@
+#background_contenu_connexion {
+    background-color: #e9eff3;
+    height: 885px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 15px;
+    min-height: 850px;
+    height: 100%;
+}
