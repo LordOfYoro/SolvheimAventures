@@ -150,8 +150,8 @@ var AppComponent = (function () {
     function AppComponent() {
         //Properties
         this.title = 'Solvheim Aventures';
-        this.logo = "src/assets/images/logo.png";
-        this.banniere = "src/assets/images/banniere_header.jpg";
+        this.logo = "assets/images/logo.png";
+        this.banniere = "assets/images/banniere_header.jpg";
     }
     return AppComponent;
 }());
