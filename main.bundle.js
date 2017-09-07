@@ -508,7 +508,7 @@ var FichePersoComponent = (function () {
         //Variable GraphQl
         this.loading = true;
         //Variable Perso
-        this.srcAvatar = "../../assets/images/avatar_nokomis.png";
+        this.srcAvatar = "assets/images/avatar_nokomis.png";
         this.valTextAreaInventaire = "";
         this.valTextAreaEquiper = "";
         this.valTextAreaSorts = "- Champs de force (bouclier magique) - 2PM +1PM par tour - confère 2 Points d'armure - Magie de la nature - 3 à 5 PM selon utilisation- Dégâts selon utilisation - Inflige un état négatif selon utilisation - Invocation Disponible: Loup - 8PM";
