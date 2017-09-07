@@ -80,6 +80,11 @@ var routes = [
     {
         path: 'ficheperso',
         component: __WEBPACK_IMPORTED_MODULE_9__fiche_perso_fiche_perso_component__["a" /* FichePersoComponent */],
+    },
+    {
+        path: '**',
+        redirectTo: '/index',
+        pathMatch: 'full',
     }
 ];
 var AppRoutingModule = (function () {
