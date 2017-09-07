@@ -9,7 +9,7 @@
         <div id="fiche_perso" *ngIf="fichePerso" class="col-xs-8 col-xs-offset-2">
             <div class="row">
                 <div id="avatar_perso" class="col-xs-6"><img [src]="srcAvatar" ></div>
-                <div id="info_principal" class="col-xs-6">
+                <div id="info_principal" class="col-xs-6"> 
                   <app-input-text-fiche  [label]="'Name :'" [valueComp]="namePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'name'"></app-input-text-fiche>
                   <app-input-text-fiche  [label]="'Race :'" [valueComp]="racePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'race'"></app-input-text-fiche>
                   <app-input-text-fiche  [label]="'Classe :'" [valueComp]="classePerso" [typeInput]="'text'" [typeComponent]="'text'" [nameInput]="'classe'"></app-input-text-fiche>

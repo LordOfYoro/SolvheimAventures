@@ -57,7 +57,6 @@ export class InputTextFicheComponent implements OnInit {
 
 
   ngOnDestroy() {
-    this.fichePersoSub.unsubscribe();
   }
 
   recupDe(deFace){

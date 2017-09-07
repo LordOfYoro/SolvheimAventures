@@ -47,9 +47,6 @@ const routes: Routes = [
         path: 'ficheperso',
         component: FichePersoComponent,
     }
-    
-    
-
 ];
 
 @NgModule({
