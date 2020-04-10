@@ -24,7 +24,7 @@
     "@angular/router": "^4.0.0",
     "apollo-angular": "^0.13.0",
     "apollo-client": "^1.9.1",
-    "auth0-js": "^8.8.0",
+    "auth0-js": "^9.13.2",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "graphql-tag": "^2.4.2",
